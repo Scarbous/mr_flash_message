@@ -1,0 +1,21 @@
+{
+    "name": "scarbous/mr_flash_message",
+    "description": "Adds the functionality to use a configuration file for TS-Config and TypoScript in your template-extension.",
+    "autoload": {
+        "psr-4": {
+            "Scarbous\\MrFlashMessage\\": "Classes/"
+        }
+    },
+    "repositories": [
+        {
+            "type":"vcs",
+            "url": "https://github.com/mouse0270/bootstrap-notify"
+        }
+    ],
+    "type": "typo3-cms-extension",
+    "keywords": ["TYPO3 CMS", "templating", "bootstrap"],
+    "license": "GPL-2.0+",
+    "require": {
+        "mouse0270/bootstrap-notify": "*"
+    }
+}

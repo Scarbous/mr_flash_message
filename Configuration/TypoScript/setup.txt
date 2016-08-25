@@ -1,0 +1,39 @@
+page {
+    jsInline.153 = TEXT
+    jsInline.153.value = var flashmessages = [];
+    includeCSS.mr_flashmessage = EXT:mr_flash_message/Resources/Public/css/main.css
+    includeJSFooterlibs.bootstrapNotify = EXT:mr_flash_message/vendor/mouse0270/bootstrap-notify/bootstrap-notify.min.js
+
+    jsFooterInline.153 = TEXT
+    jsFooterInline.153.value (
+        ;(function ($) {
+            $.notifyDefaults({
+                placement: {
+                    from: "{$plugin.tx_mr_flashmessage.settings.notifyDefaults.placement.from}",
+                    align: "{$plugin.tx_mr_flashmessage.settings.notifyDefaults.placement.align}"
+                },
+                offset: {$plugin.tx_mr_flashmessage.settings.notifyDefaults.offset},
+            	spacing: {$plugin.tx_mr_flashmessage.settings.notifyDefaults.spacing},
+            	z_index: {$plugin.tx_mr_flashmessage.settings.notifyDefaults.z_index},
+            	delay: {$plugin.tx_mr_flashmessage.settings.notifyDefaults.delay},
+            	timer: {$plugin.tx_mr_flashmessage.settings.notifyDefaults.timer},
+                "animate": {
+                    "enter": '{$plugin.tx_mr_flashmessage.settings.notifyDefaults.animate.enter}',
+                    "exit": '{$plugin.tx_mr_flashmessage.settings.notifyDefaults.animate.exit}'
+                }
+            });
+        }(jQuery));
+    )
+
+    includeJSFooter.mr_flashmessage = EXT:mr_flash_message/Resources/Public/JavaScript/main.js
+}
+{$plugin.tx_mr_flashmessage.settings.notifyDefaults}
+[globalVar = LIT:0 < {$plugin.tx_mr_flashmessage.settings.jquery}]
+page {
+	includeJSlibs {
+        jQuery = https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js
+    	jQuery.external = 1
+    	jQuery.forceOnTop = 1
+	}
+}
+[end]

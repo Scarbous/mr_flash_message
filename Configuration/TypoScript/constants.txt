@@ -1,0 +1,30 @@
+plugin.tx_mr_flashmessage {
+    settings {
+    # cat=mr_flashmessage//1000; type=boolean; label= Include jQuery From cdnjs.com: Add jQuery JavaScript
+    jquery = 0
+
+    notifyDefaults {
+        placement {
+            # cat=mr_flashmessage//1010; type=string; label=notifyDefaults.placement.from
+            from = top
+            # cat=mr_flashmessage//1020; type=string; label=notifyDefaults.placement.align
+            align = center
+        },
+        # cat=mr_flashmessage//1030; type=string; label=notifyDefaults.offset
+        offset = 60
+        # cat=mr_flashmessage//1040; type=string; label=notifyDefaults.spacing
+        spacing = 10
+        # cat=mr_flashmessage//1050; type=string; label=notifyDefaults.z_index
+        z_index = 1031
+        # cat=mr_flashmessage//1060; type=string; label=notifyDefaults.delay
+        delay = 5000
+        # cat=mr_flashmessage//1070; type=string; label=notifyDefaults.timer
+        timer = 1000
+        animate {
+            # cat=mr_flashmessage//1080; type=string; label=notifyDefaults.animate.enter
+            enter = mrfm-animated fadeInDown
+            # cat=mr_flashmessage//1090; type=string; label=notifyDefaults.animate.exit
+            exit = mrfm-animated fadeOutUp
+        }
+    }
+}
