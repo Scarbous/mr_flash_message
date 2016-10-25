@@ -27,7 +27,7 @@ page {
 
     includeJSFooter.mr_flashmessage = EXT:mr_flash_message/Resources/Public/JavaScript/main.js
 }
-{$plugin.tx_mr_flashmessage.settings.notifyDefaults}
+
 [globalVar = LIT:0 < {$plugin.tx_mr_flashmessage.settings.jquery}]
 page {
 	includeJSlibs {
