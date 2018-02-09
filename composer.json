@@ -6,16 +6,11 @@
             "Scarbous\\MrFlashMessage\\": "Classes/"
         }
     },
-    "repositories": [
-        {
-            "type":"vcs",
-            "url": "https://github.com/mouse0270/bootstrap-notify"
-        }
-    ],
     "type": "typo3-cms-extension",
-    "keywords": ["TYPO3 CMS", "templating", "bootstrap"],
-    "license": "GPL-2.0+",
-    "require": {
-        "mouse0270/bootstrap-notify": "*"
-    }
+    "keywords": [
+        "TYPO3 CMS",
+        "templating",
+        "bootstrap"
+    ],
+    "license": "GPL-2.0+"
 }

@@ -2,7 +2,13 @@ page {
     jsInline.153 = TEXT
     jsInline.153.value = var flashmessages = [];
     includeCSS.mr_flashmessage = EXT:mr_flash_message/Resources/Public/css/main.css
-    includeJSFooterlibs.bootstrapNotify = EXT:mr_flash_message/vendor/mouse0270/bootstrap-notify/bootstrap-notify.min.js
+    includeJSFooterlibs.bootstrapNotify = https://cdnjs.cloudflare.com/ajax/libs/mouse0270-bootstrap-notify/3.1.7/bootstrap-notify.min.js
+    includeJSFooterlibs.bootstrapNotify{
+        external = 1
+        disableCompression = 1
+        excludeFromConcatenation = 1
+        integrity = sha256-LlN0a0J3hMkDLO1mhcMwy+GIMbIRV7kvKHx4oCxNoxI=
+    }
 
     jsFooterInline.153 = TEXT
     jsFooterInline.153.value (
