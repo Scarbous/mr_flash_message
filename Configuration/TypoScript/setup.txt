@@ -6,7 +6,7 @@ page {
 
     jsFooterInline.153 = TEXT
     jsFooterInline.153.value (
-        ;(function ($) {
+        (function ($) {
             $.notifyDefaults({
                 placement: {
                     from: "{$plugin.tx_mr_flashmessage.settings.notifyDefaults.placement.from}",
@@ -22,12 +22,12 @@ page {
                     "exit": '{$plugin.tx_mr_flashmessage.settings.notifyDefaults.animate.exit}'
                 }
             });
-        }(jQuery));
+        })(jQuery);
     )
 
     includeJSFooter.mr_flashmessage = EXT:mr_flash_message/Resources/Public/JavaScript/main.js
 }
-
+{$plugin.tx_mr_flashmessage.settings.notifyDefaults}
 [globalVar = LIT:0 < {$plugin.tx_mr_flashmessage.settings.jquery}]
 page {
 	includeJSlibs {

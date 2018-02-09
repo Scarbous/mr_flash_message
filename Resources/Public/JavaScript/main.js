@@ -1,4 +1,4 @@
-;(function ($) {
+(function ($) {
 
     function mrfmShowMessages() {
         if (flashmessages) {
@@ -15,5 +15,4 @@
 
     $(window)
         .ready(mrfmShowMessages);
-}
-(jQuery));
+})(jQuery);
